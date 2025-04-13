@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:  #0D0D0D;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 128px;
+    margin: 0;
+
+}
+
+.navbar {
+    display: flex;
+    background: #9ee5eb;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+
+.navbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:  center;
+    padding: 0;
+    gap: 200px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+section {
+    padding: 100px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 35rem;
+    margin-bottom: 100px;
+    filter: brightness(1.1);
+}
+
+
+.gallery-title {
+    text-align: center;
+}
+
+.gallery .btn-gallery ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+.gallery .btn-gallery li {
+    list-style: none;
+    font-size: 68px;
+    font-weight: 700;
+    border: 4px solid white;
+    opacity: 50%;
+}
+
+.btn-gallery li.active {
+    border-bottom: 4px solid black;
+    border-radius: 2px;
+    opacity: 100%;
+    transition: .8s ease;
+}
+
+.btn-gallery li:hover {
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    transition: 0.2s ease ;
+    opacity: 60%;
+}
+.gallery-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.gallery-image img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    object-position: center;
+    border-radius: 10px;
+    transition: all 1s ease;
+    box-shadow: 2px 5px 10px 2px  rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+
+    section, .navbar, .btn-gallery {
+        padding: 20px;
+    }
+
+    .navbar {
+        overflow-x: hidden;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .header img {
+        width: 20rem;
+        margin-bottom: 10px;
+    }
+
+
+    
+    .gallery .btn-gallery ul {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin-bottom: 70px;
+    }
+
+    .gallery .btn-gallery li {
+        font-size: 24px;
+
+        
+    }
+
+    .gallery-image {
+        gap: 20px;
+    }
+
+
+    .gallery-image img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .gallery-image img {
+        width: 90px;
+    }
+    
+}
