@@ -1,6 +1,6 @@
 
 var Typed = new Typed('.content-msg', {
-    strings: ['Pesan singkat untuk Kamu❤️ ^1000', 'Yang sedang berulang tahun🎉 ^1000', 'Sekarang sudah umur 15😉', 'Semoga sehat selalu yasa✨', 'Aku sayang kamu😊'],
+    strings: ['Pesan singkat untuk Kamu❤️ ^1000', 'Alfita kayasa sekarang berulang tahun🎉 ^1000', 'Sekarang sudah umur 15 Tahun😉', 'Semoga sehat selalu yasa✨', 'Aku sayang kamu😊'],
     typeSpeed: 50,
     loop: true,
     backSpeed: 20,
